@@ -3,3 +3,4 @@ pineapple x 3
 strawberry x 2 
 apple x 3 
 kiwi x 3
+orange x 2
