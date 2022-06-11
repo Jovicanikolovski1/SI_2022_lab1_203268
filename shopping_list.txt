@@ -1,5 +1,5 @@
 banana x 2
-pineapple x 2 
+pineapple x 3 
 strawberry x 2 
 apple x 2 
 kiwix 2
