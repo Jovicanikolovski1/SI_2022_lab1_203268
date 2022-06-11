@@ -1,0 +1,138 @@
+1. Го инсталирав гит со симнување на executable фајл од https://git-scm.com/download/win за Windows и извршување на истиот. Github профил 
+креиран под името Jovicanikolovski1 
+-----
+
+2. Името на гранката сменето преку Github UI-то. 
+-----
+
+3. Репозиториумот креиран според барањата: https://github.com/Jovicanikolovski1/SI_2022_lab1_203268
+-----
+
+4. git clone https://github.com/Jovicanikolovski1/SI_2022_lab1_203268.git
+-----
+
+5. Фајлот го креирав со notepad и рачно ги додадов 5те ставки. Потоа, преку командна линија: 
+git add shopping_list.txt  (со цел да го вклучам овој фајл во мојот комит) 
+git commit -m "Add 5 items to the shopping list" ( го извршив комитот со соодветната порака) 
+-----
+
+6. Промените во фајлот ги направив рачно а потоа: 
+git add shopping_list.txt
+git commit -m “Add quantities to the items.”
+-----
+
+7. git branch branch1
+git branch branch2
+-----
+
+8. 
+Од првиот комит од точка 5) добив: 
+[master df15c9d] Add 5 items to the shopping list
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 shopping_list.txt 
+
+Од вториот комит од точка 6) добив: 
+[master 811ec48] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+-----
+
+9. git push (за мастер гранката)
+git checkout branch1 (се префрлив на branch1 гранката)
+git push --set-upstream origin branch1 
+git checkout branch2 
+git push --set-upstream origin branch2
+-----
+
+10. git checkout branch1 
+-----
+
+11. git add shopping_list.txt
+git commit -m "Change quantity of item #5"
+-----
+
+12. git checkout master
+-----
+
+13. git add shopping_list.txt
+git commit -m “Change quantity of item #2”
+-----
+
+14. git push origin --all 
+-----
+
+15. git checkout branch2
+-----
+
+16. git add shopping_list.txt
+git commit -m "Modify item #4"
+-----
+
+17. 
+Од комитот во чекор 11):
+[branch1 b458a6b] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Од префрлањето на гранката во 12): 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'. 
+
+Од комитот во чекор 13) 
+[master 573a246] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Од синхронизацијата во чекор 14) 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 562 bytes | 281.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Jovicanikolovski1/SI_2022_lab1_203268.git
+   811ec48..b458a6b  branch1 -> branch1
+   811ec48..573a246  master -> master
+
+Од префрлањето на гранката во 15) 
+On branch branch2
+Your branch is up to date with 'origin/branch2'.
+
+Од комитот во чекор 16) 
+[branch2 d77b94c] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-----
+
+18. git add shopping-list.txt 
+git commit --amend -m "Modify item #4 and add item #6"
+-----
+
+19. 
+Од адаптицајата на комитот во чекор 18) 
+[branch2 df7db61] Modify item #4 and add item #6
+ Date: Sat Jun 11 18:21:40 2022 +0200
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+-----
+
+20. git checkout master 
+git merge branch1 
+
+При спојувањето на двете гранки имаш конфликт во 4 и 5 линија, односно на мастер беше променета 4тата ставка, а на branch1 беше променета 
+5тата ставка. Ги разрешив конфликтите на начин што ја прифатив промената од мастер за 4тата ставка и промената од branch1 за 5тата ставка.
+----- 
+
+21. git merge branch2 
+
+При спојувањето на двете гранки имаш конфликт во 5 и 6 линија (6тата линија доаѓа од branch2), односно на мастер беше променета 4тата 
+ставка, а на branch2 беше променета 5тата ставка и додадена 6та ставка. Ги разрешив конфликтите на начин што ја прифатив 
+промената од мастер за 5тата ставка и промената од branch2 за 6тата ставка. 
+-----
+
+
+22. git add 203268.txt 
+git commit -m "Add docs" 
+-----
+
+23. git push origin --all  
+
+
+
+
