@@ -1,5 +1,5 @@
-banana 
-pineapple
-strawberry
-apple
-kiwi
+banana x 2
+pineapple x 2 
+strawberry x 2 
+apple x 2 
+kiwix 2
