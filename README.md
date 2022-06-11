@@ -1,1 +1,1 @@
-# SI_2022_lab1_203268
+# Jovica Nikolovski, 203268
